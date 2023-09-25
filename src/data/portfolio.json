@@ -3,8 +3,26 @@
     {
       "cover": "/portfolio/1/notion1.png",
       "title": "portfolio website",
-      "description": "React, Tailwind, CSS, HTML",
+      "description": "React, Tailwind, CSS, HTML, JavaScript",
       "url": "https://github.com/Glennix27/react-portfolio"
+    },
+    {
+      "cover": "/portfolio/1/notion2.png",
+      "title": "MarkeTani",
+      "description": "React-native, CSS, HTML, JavaScript",
+      "url": "https://github.com/Glennix27/marketani"
+    },
+    {
+      "cover": "/portfolio/1/notion3.png",
+      "title": "VoGreen",
+      "description": "JavaScript, CSS, HTML",
+      "url": "https://github.com/Glennix27/VoGreen"
+    },
+    {
+      "cover": "/portfolio/1/notion4.png",
+      "title": "Album Shop",
+      "description": "HTML, CSS, JavaScript",
+      "url": "https://github.com/Glennix27/PSD-Project-LAB"
     }
   ]
 }
