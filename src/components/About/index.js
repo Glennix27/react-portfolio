@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import {
   faLaravel,
   faCss3,
@@ -13,13 +13,13 @@ import { Link } from 'react-router-dom'
 import './index.scss'
 
 const About = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass] = useState('text-animate')
 
-  useEffect(() => {
-    return setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
+  // useEffect(() => {
+  //   return setTimeout(() => {
+  //     setLetterClass('text-animate-hover')
+  //   }, 3000)
+  // }, [])
 
   return (
     <>
