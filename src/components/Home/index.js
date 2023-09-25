@@ -1,11 +1,11 @@
-import {  useState } from 'react'
+import {  useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import Photo from './Photo/binus.png'
 
 const Home = () => {
-  const [letterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState('text-animate')
 
   const nameArray1 = ['G', 'l', 'e', 'n', 'n', 'i', 'x']
   const nameArray2 = [
@@ -26,11 +26,12 @@ const Home = () => {
     'w',
   ]
 
-  // useEffect(() => {
-  //   return setTimeout(() => {
-  //     setLetterClass('text-animate-hover')
-  //   }, 4000)
-  // }, [])
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 4000);
+    return () => clearTimeout(timer);
+  }, [])
 
   return (
     <>
