@@ -5,7 +5,7 @@ import portfolioData from '../../data/portfolio.json'
 
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const [portfolio] = useState([])
+  // const [project] = useState([])
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -17,17 +17,13 @@ const Portfolio = () => {
     }
   })
 
-  const renderPortfolio = (portfolio) => {
+  const renderPortfolio = (project) => {
     return (
       <div className="images-container">
-        {portfolio.map((port, idx) => {
+        {project.map((port, idx) => {
           return (
             <div className="image-box" key={idx}>
-              <img
-                src={port.image}
-                className="portfolio-image"
-                alt="portfolio"
-              />
+              <img src={port.image} className="project-image" alt="project" />
               <div className="content">
                 <p className="title">{port.name}</p>
                 <h4 className="description">{port.description}</h4>
@@ -44,7 +40,7 @@ const Portfolio = () => {
 
   return (
     <>
-      <div className="container portfolio-page">
+      <div className="container project-page">
         <h1 className="page-title">
           <AnimatedLetters
             letterClass={letterClass}
@@ -52,7 +48,7 @@ const Portfolio = () => {
             idx={15}
           />
         </h1>
-        <div>{renderPortfolio(portfolio)}</div>
+        <div>{renderPortfolio(portfolioData.project)}</div>
       </div>
     </>
   )
