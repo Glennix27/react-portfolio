@@ -46,7 +46,7 @@ const About = () => {
             my project and will continue to progress on my journey in web
             development.
           </p>
-          <Link to="/about" className="flat-button">
+          <Link to="/project" className="flat-button">
             MY PROJECTS
           </Link>
         </div>

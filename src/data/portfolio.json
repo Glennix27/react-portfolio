@@ -1,0 +1,10 @@
+{
+  "portfolio": [
+    {
+      "cover": "/portfolio/1/notion1.png",
+      "title": "portfolio website",
+      "description": "React, Tailwind, CSS, HTML",
+      "url": "https://github.com/Glennix27/react-portfolio"
+    }
+  ]
+}
