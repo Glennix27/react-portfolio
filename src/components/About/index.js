@@ -37,17 +37,10 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm an Undergraduate from Bina Nusantara University majoring in
-            Computer Science degree. I'm still working on my web development
-            skill and would love to learn more about web development. Other than
-            learning about web development i would also love to learn about
-            working enviorment.
+          I'm an Undergraduate from Bina Nusantara University majoring in Computer Science degree. I'm still working on my web development skills and would love to learn more about web development. Other than learning about web development I would also love to learn about the working environment.
           </p>
           <p align="LEFT">
-            I'm specialize in Software Enginerring especially full stack web
-            development. I also have the previlages to work with amazing team on
-            my project and will continue to progress on my journey in web
-            development.
+          I specialize in Software engineering, especially full-stack web development. I also have the privilege to work with an amazing team on my project and will continue to progress on my journey in web development.
           </p>
           <Link to="/project" className="flat-button">
             MY PROJECTS
