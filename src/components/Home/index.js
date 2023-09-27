@@ -2,7 +2,6 @@ import {  useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
-// import Photo from './Photo/binus.png'
 import {
   faLaravel,
   faCss3,
@@ -12,6 +11,7 @@ import {
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import backgroundImage from './Photo/Paris.jpg'
 
 
 const Home = () => {
@@ -45,7 +45,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="container home-page">
+      <div className="container home-page" style={{ backgroundImage: `url(${backgroundImage})`}}>
         <div className="text-zone">
           <h1>
             <span className={letterClass}>H</span>

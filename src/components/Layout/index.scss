@@ -6,7 +6,6 @@
 
 .top-tags {
   bottom: auto;
-  top: 35px;
 }
 
 .tags {
@@ -26,11 +25,10 @@
 .container {
   width: 100%;
   will-change: contents;
-  height: 90%;
+  height: 0%;
   min-height: 566px;
   position: absolute;
   opacity: 0;
-  top: 5%;
   margin: 0 auto;
   z-index: 1;
   transform-style: preserve-3d;

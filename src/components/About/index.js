@@ -42,7 +42,7 @@ const About = () => {
           <p align="LEFT">
           I specialize in Software engineering, especially full-stack web development. I also have the privilege to work with an amazing team on my project and will continue to progress on my journey in web development.
           </p>
-          <Link to="/project" className="flat-button">
+          <Link to="/projects" className="flat-button">
             MY PROJECTS
           </Link>
         </div>

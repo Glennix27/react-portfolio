@@ -1,4 +1,5 @@
 .home-page {
+  background-size: 100% 100%;
   .text-zone {
     position: absolute;
     left: 10%;
@@ -15,15 +16,6 @@
     margin: 0;
     font-family: 'Coolvetica';
     font-weight: 400;
-
-    img {
-      margin-left: 20px;
-      opacity: 0;
-      width: 32px;
-      height: auto;
-      animation: rotateIn 1s linear both;
-      animation-delay: 1.4s;
-    }
   }
 
   h2 {
@@ -98,7 +90,7 @@
   animation-duration: 12s;
   transform-style: preserve-3d;
   transform-origin: 100px 100px 0;
-  margin-left: 0;
+  right: 0;
 
   div {
     position: absolute;
