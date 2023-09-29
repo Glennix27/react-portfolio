@@ -45,6 +45,32 @@
     &:hover {
       background: #00ffc8;
       color: #333;
+      animation: wiggle 2s linear infinite;
+
+      @keyframes wiggle {
+        from, 
+        to{
+          transform: rotateZ(0);
+        }
+        15%{
+          transform: rotateZ(-15deg);
+        }
+        20%{
+          transform: rotateZ(10deg);
+        }
+        25%{
+          transform: rotateZ(-10deg);
+        }
+        30%{
+          transform: rotateZ(6deg);
+        }
+        35%{
+          transform: rotateZ(-4deg);
+        }
+        40%{
+          transform: rotateZ(0);
+        }
+      }
     }
   }
 }
