@@ -11,7 +11,7 @@ import {
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import backgroundImage from './Photo/Paris.jpg'
+import backgroundVideo from './Photo/video2.mp4'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -44,6 +44,10 @@ const Home = () => {
 
   return (
     <>
+      <video autoPlay muted loop className="background-video">
+        <source src={backgroundVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="container home-page">
         <div className="text-zone">
           <h1>
@@ -70,6 +74,7 @@ const Home = () => {
             ABOUT ME
           </Link>
         </div>
+
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
