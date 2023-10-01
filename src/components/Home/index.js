@@ -1,4 +1,4 @@
-import {  useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
@@ -12,7 +12,6 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import backgroundImage from './Photo/Paris.jpg'
-
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -39,8 +38,8 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 4000);
-    return () => clearTimeout(timer);
+    }, 4000)
+    return () => clearTimeout(timer)
   }, [])
 
   return (

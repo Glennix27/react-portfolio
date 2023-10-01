@@ -28,23 +28,32 @@ const About = () => {
   return (
     <>
       <div className="container about-page">
-        <div className="text-zone">
-          <h1>
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-              idx={15}
-            />
-          </h1>
-          <p>
-          I'm an Undergraduate from Bina Nusantara University majoring in Computer Science degree. I'm still working on my web development skills and would love to learn more about web development. Other than learning about web development I would also love to learn about the working environment.
-          </p>
-          <p align="LEFT">
-          I specialize in Software engineering, especially full-stack web development. I also have the privilege to work with an amazing team on my project and will continue to progress on my journey in web development.
-          </p>
-          <Link to="/projects" className="flat-button">
-            MY PROJECTS
-          </Link>
+        <div className="text-cont">
+          <div className="text-zone">
+            <h1>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+                idx={15}
+              />
+            </h1>
+            <p>
+              I'm an Undergraduate from Bina Nusantara University majoring in
+              Computer Science degree. I'm still working on my web development
+              skills and would love to learn more about web development. Other
+              than learning about web development I would also love to learn
+              about the working environment.
+            </p>
+            <p align="LEFT">
+              I specialize in Software engineering, especially full-stack web
+              development. I also have the privilege to work with an amazing
+              team on my project and will continue to progress on my journey in
+              web development.
+            </p>
+            <Link to="/projects" className="flat-button">
+              MY PROJECTS
+            </Link>
+          </div>
         </div>
 
         <div className="stage-cube-cont">

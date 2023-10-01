@@ -1,9 +1,8 @@
 .home-page {
-  background-size: 100% 100%;
   .text-zone {
     position: absolute;
     left: 10%;
-    top: 50%;
+    top: 80%;
     transform: translateY(-50%);
     width: 40%;
     max-height: 90%;
@@ -156,26 +155,26 @@
 }
 
 @keyframes wiggle {
-  from, 
-  to{
+  from,
+  to {
     transform: rotateZ(0);
   }
-  15%{
+  15% {
     transform: rotateZ(-15deg);
   }
-  20%{
+  20% {
     transform: rotateZ(10deg);
   }
-  25%{
+  25% {
     transform: rotateZ(-10deg);
   }
-  30%{
+  30% {
     transform: rotateZ(6deg);
   }
-  35%{
+  35% {
     transform: rotateZ(-4deg);
   }
-  40%{
+  40% {
     transform: rotateZ(0);
   }
 }
