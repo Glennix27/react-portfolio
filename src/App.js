@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import Home from './components/Home'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
@@ -6,9 +6,11 @@ import Layout from './components/Layout'
 import './App.scss'
 
 function App() {
+  const location = useLocation()
+
   return (
     <>
-      <Routes>
+      <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />

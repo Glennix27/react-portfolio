@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import Sidebar from '../Sidebar/'
 import './index.scss'
+import transition from '../../transition'
 
 const Layout = () => {
   return (
@@ -14,4 +15,4 @@ const Layout = () => {
   )
 }
 
-export default Layout
+export default transition(Layout)
