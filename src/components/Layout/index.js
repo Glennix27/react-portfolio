@@ -4,15 +4,16 @@ import './index.scss'
 import transition from '../../transition'
 
 const Layout = () => {
+  const TransitionedOutlet = transition(Outlet)
   return (
     <div className="App">
       <Sidebar />
       <div className="page">
-        <Outlet />
+        <TransitionedOutlet />
         <span className="tags bottom-tags"></span>
       </div>
     </div>
   )
 }
 
-export default transition(Layout)
+export default Layout

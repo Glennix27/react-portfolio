@@ -1,23 +1,22 @@
 import { motion as m } from 'framer-motion'
 
-const transition = (defaultcomponent) => {
+const transition = (Defaultcomponent) => {
   return () => (
     <>
-      <defaultcomponent />
+      <Defaultcomponent />
       <m.div
         className="slide-in"
-        initial={{ scaleY: 0 }}
-        animate={{ scaleY: 0 }}
-        exit={{ scaleY: 1 }}
-        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+        initial={{ y: '-100%' }}
+        animate={{ y: 0 }}
+        exit={{ y: 0 }}
+        transition={{ duration: 5, ease: [0.22, 2, 0.36, 2] }}
       />
-
       <m.div
         className="slide-out"
-        initial={{ scaleY: 0 }}
-        animate={{ scaleY: 0 }}
-        exit={{ scaleY: 1 }}
-        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+        initial={{ y: 0 }}
+        animate={{ y: '-100%' }}
+        exit={{ y: '100%' }}
+        transition={{ duration: 5, ease: [0.22, 2, 0.36, 2] }}
       />
     </>
   )

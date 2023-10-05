@@ -11,7 +11,6 @@ import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
 import './index.scss'
-import transition from '../../transition'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -84,4 +83,4 @@ const About = () => {
   )
 }
 
-export default transition(About)
+export default About

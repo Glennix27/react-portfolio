@@ -12,7 +12,6 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import backgroundVideo from './Photo/video2.mp4'
-import transition from '../../transition'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -103,4 +102,4 @@ const Home = () => {
   )
 }
 
-export default transition(Home)
+export default Home

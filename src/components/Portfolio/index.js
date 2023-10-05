@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import transition from '../../transition'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import portfolioData from '../../data/portfolio.json'
@@ -62,4 +61,4 @@ const Portfolio = () => {
   )
 }
 
-export default transition(Portfolio)
+export default Portfolio
