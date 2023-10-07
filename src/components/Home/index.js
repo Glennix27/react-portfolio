@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import backgroundVideo from './Photo/video2.mp4'
+import transition from '../../transition'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -70,4 +71,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default transition(Home)

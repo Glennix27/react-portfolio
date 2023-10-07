@@ -11,6 +11,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
 import './index.scss'
+import transition from '../../transition'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -57,7 +58,13 @@ const About = () => {
         </div>
 
         <div className="stage-cube-cont">
-          <h1 className="skill-text">Skills</h1>
+          <h1 className="skill-text">
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={['S', 'k', 'i', 'l', 'l', 's']}
+              idx={15}
+            />
+          </h1>
           <div className="cubespinner">
             <div className="face1">
               <FontAwesomeIcon icon={faLaravel} color="#red" />
@@ -84,4 +91,4 @@ const About = () => {
   )
 }
 
-export default About
+export default transition(About)

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import portfolioData from '../../data/portfolio.json'
+import transition from '../../transition'
 
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -61,4 +62,4 @@ const Portfolio = () => {
   )
 }
 
-export default Portfolio
+export default transition(Portfolio)

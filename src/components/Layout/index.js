@@ -1,15 +1,15 @@
 import { Outlet } from 'react-router-dom'
 import Sidebar from '../Sidebar/'
 import './index.scss'
-import transition from '../../transition'
+// import transition from '../../transition'
 
 const Layout = () => {
-  const TransitionedOutlet = transition(Outlet)
+  // const TransitionedOutlet = transition(Outlet)
   return (
     <div className="App">
       <Sidebar />
       <div className="page">
-        <TransitionedOutlet />
+        <Outlet />
         <span className="tags bottom-tags"></span>
       </div>
     </div>
