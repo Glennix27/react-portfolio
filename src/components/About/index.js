@@ -57,6 +57,7 @@ const About = () => {
         </div>
 
         <div className="stage-cube-cont">
+          <h1 className="skill-text">Skills</h1>
           <div className="cubespinner">
             <div className="face1">
               <FontAwesomeIcon icon={faLaravel} color="#red" />

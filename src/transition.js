@@ -9,14 +9,14 @@ const transition = (Defaultcomponent) => {
         initial={{ y: '-100%' }}
         animate={{ y: 0 }}
         exit={{ y: 0 }}
-        transition={{ duration: 5, ease: [0.22, 2, 0.36, 2] }}
+        transition={{ duration: 3, ease: [0.22, 2, 0.36, 2] }}
       />
       <m.div
         className="slide-out"
         initial={{ y: 0 }}
         animate={{ y: '-100%' }}
         exit={{ y: '100%' }}
-        transition={{ duration: 5, ease: [0.22, 2, 0.36, 2] }}
+        transition={{ duration: 3, ease: [0.22, 2, 0.36, 2] }}
       />
     </>
   )
