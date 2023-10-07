@@ -2,15 +2,6 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
-import {
-  faLaravel,
-  faCss3,
-  faPhp,
-  faHtml5,
-  faJsSquare,
-  faReact,
-} from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import backgroundVideo from './Photo/video2.mp4'
 
 const Home = () => {
@@ -73,29 +64,6 @@ const Home = () => {
           <Link to="/about" className="flat-button">
             ABOUT ME
           </Link>
-        </div>
-
-        <div className="stage-cube-cont">
-          <div className="cubespinner">
-            <div className="face1">
-              <FontAwesomeIcon icon={faLaravel} color="#red" />
-            </div>
-            <div className="face2">
-              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-            </div>
-            <div className="face3">
-              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-            </div>
-            <div className="face4">
-              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-            </div>
-            <div className="face5">
-              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-            </div>
-            <div className="face6">
-              <FontAwesomeIcon icon={faPhp} color="#DarkBlue" />
-            </div>
-          </div>
         </div>
       </div>
     </>
