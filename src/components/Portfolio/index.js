@@ -3,6 +3,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import portfolioData from '../../data/portfolio.json'
 import transition from '../../transition'
+import backgroundVideo from './Photo/video2.mp4'
 
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -48,6 +49,10 @@ const Portfolio = () => {
 
   return (
     <>
+      <video autoPlay muted loop className="background-video">
+        <source src={backgroundVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="container portfolio-page">
         <h1 className="page-title">
           <AnimatedLetters

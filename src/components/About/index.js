@@ -12,6 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom'
 import './index.scss'
 import transition from '../../transition'
+import backgroundVideo from './Photo/video2.mp4'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -28,6 +29,10 @@ const About = () => {
 
   return (
     <>
+      <video autoPlay muted loop className="background-video">
+        <source src={backgroundVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="container about-page">
         <div className="text-cont">
           <div className="text-zone">
