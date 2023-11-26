@@ -7,6 +7,7 @@ import {
   faUser,
   faBars,
   faSuitcase,
+  faClose,
 } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from 'react-router-dom'
 
@@ -40,6 +41,15 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
         </NavLink>
+        <FontAwesomeIcon
+          onClick={() => {
+            setShowNav(false)
+          }}
+          icon={faClose}
+          color="#FFFFFF"
+          size="3x"
+          className="close-icon"
+        />
       </nav>
       <ul>
         <li>
@@ -70,7 +80,10 @@ const Sidebar = () => {
         </li>
       </ul>
       <FontAwesomeIcon
-        onClick={() => setShowNav(true)}
+        onClick={() => {
+          // console.log('Hamburger icon clicked')
+          setShowNav(true)
+        }}
         icon={faBars}
         color="#00ffc8"
         size="3x"

@@ -8,25 +8,6 @@ import transition from '../../transition'
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray1 = ['G', 'l', 'e', 'n', 'n', 'i', 'x']
-  const nameArray2 = [
-    'X',
-    'a',
-    'v',
-    'e',
-    'r',
-    'i',
-    'u',
-    's',
-    '',
-    'M',
-    'a',
-    'r',
-    'l',
-    'o',
-    'w',
-  ]
-
   useEffect(() => {
     const timer = setTimeout(() => {
       setLetterClass('text-animate-hover')
@@ -50,13 +31,13 @@ const Home = () => {
             <br />
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={nameArray1}
+              strArray={'Glennix'.split('')}
               idx={15}
             />
             <br />
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={nameArray2}
+              strArray={'Xaverius Marlow'.split('')}
               idx={15}
             />
             <br />

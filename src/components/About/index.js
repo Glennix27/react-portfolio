@@ -51,7 +51,7 @@ const About = () => {
               about the working environment.
             </p>
             <p align="LEFT">
-              I specialize in Software engineering, especially full-stack web
+              I specialize in Software engineering, especially front-end web
               development. I also have the privilege to work with an amazing
               team on my project and will continue to progress on my journey in
               web development.
@@ -66,7 +66,7 @@ const About = () => {
           <h1 className="skill-text">
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['S', 'k', 'i', 'l', 'l', 's']}
+              strArray={'Skills'.split('')}
               idx={15}
             />
           </h1>

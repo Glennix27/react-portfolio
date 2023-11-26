@@ -3,7 +3,7 @@
     {
       "cover": "/portfolio/1/notion1.png",
       "title": "portfolio website",
-      "description": "React, Tailwind, CSS, HTML, JavaScript",
+      "description": "React, Tailwind, CSS, JavaScript",
       "url": "https://github.com/Glennix27/react-portfolio"
     },
     {
@@ -23,6 +23,12 @@
       "title": "Album Shop",
       "description": "C#, Asp.net, SQL",
       "url": "https://github.com/Glennix27/PSD-Project-LAB"
+    },
+    {
+      "cover": "/portfolio/1/notion5.png",
+      "title": "BCQS (Binus Canteen Queuing System",
+      "description": "React, Tailwind, HTML, JavaScript",
+      "url": "https://github.com/Glennix27/BCQS"
     }
   ]
 }
